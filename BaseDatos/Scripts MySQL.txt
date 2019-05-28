@@ -1,0 +1,9 @@
+CREATE DATABASE pruebas CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+CREATE TABLE empleados (
+  Empleado_Id int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  Nombres varchar(25) NOT NULL,
+  Apellidos varchar(25) NOT NULL,
+  Telefono varchar(10) NOT NULL,
+  Correo varchar(50) NOT NULL
+  )
