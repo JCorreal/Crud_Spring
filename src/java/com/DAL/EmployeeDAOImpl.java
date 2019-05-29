@@ -82,7 +82,6 @@ public class EmployeeDAOImpl implements EmployeeDAO
         return employeeList;
     }
 
-    // Updating a particular Employee
     public void updateEmployee(Employee employee)
     {
         String sql = "update Empleados set Nombres =?, Apellidos=?, Telefono=?, Correo=? where empleado_id=?";
@@ -90,7 +89,6 @@ public class EmployeeDAOImpl implements EmployeeDAO
         { employee.getNombres(), employee.getApellidos(), employee.getTelefono(), employee.getCorreo(), employee.getEmpleado_id() });
     }
 
-    // Deletion of a particular Employee
     public void deleteEmployee(int id)
     {
         String sql = "delete from Empleados where empleado_id=?";
